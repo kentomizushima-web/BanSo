@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 93 13% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 93 13% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 93 13% 10%;
+    --primary: 100 30% 22%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 167 100% 38%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 90 18% 95%;
+    --muted-foreground: 96 8% 35%;
+    --accent: 90 18% 95%;
+    --accent-foreground: 100 30% 22%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 90 18% 88%;
+    --input: 90 18% 88%;
+    --ring: 100 30% 22%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-[#1A2016] font-sans antialiased; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #F5F7F0; border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb { background: #c1cbb8; border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #5C6657; }
+  * { scrollbar-width: thin; scrollbar-color: #c1cbb8 #F5F7F0; }
+  :focus-visible { @apply outline-none ring-2 ring-[#334926] ring-offset-2; }
+  ::selection { background-color: #92D050; color: #1A2016; }
+}
